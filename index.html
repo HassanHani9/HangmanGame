@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangMan</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css.map">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info d-flex justify-content-between">
+            <div class="game-name fw-bold fs-5">Hangman</div>
+            <div class="category fw-bold fs-5">
+                Word From: <span class="fw-light fst-italic"></span>
+            </div>
+        </div>
+        <hr>
+        <div class="page-head">
+            <div class="row">
+                <div class="col-5">
+                    <div class="right d-flex">
+                        <div class="the-draw flex-grow-1">
+                            <div class="stand position-relative"></div>
+                            <div class="the-hang position-absolute"></div>
+                            <div class="drow-head position-absolute"></div>
+                            <div class="drow-body position-relative"></div>
+                            <div class="hands position-absolute"></div>
+                            <div class="legs position-absolute"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="left"><span>N</span></div></div>
+                </div>
+
+            </div>  
+        </div>
+        <hr>
+        <div class="guess-letters">
+            <span></span>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
