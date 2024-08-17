@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./Css/bootstrap.min.css">
     <link rel="stylesheet" href="./Css/bootstrap.min.css.map">
+
 </head>
 <body>
     <div class="container">
         <div class="game-info d-flex justify-content-between">
             <div class="game-name fw-bold fs-5">Hangman</div>
             <div class="category fw-bold fs-5">
-                Word From: <span class="fw-light fst-italic"></span>
+                Word From: <span class="fw-light fst-italic text-secondary fw-bolder"></span>
             </div>
         </div>
         <hr>
@@ -24,8 +25,8 @@
                         <div class="the-draw flex-grow-1">
                             <div class="stand position-relative"></div>
                             <div class="the-hang position-absolute"></div>
-                            <div class="drow-head position-absolute"></div>
-                            <div class="drow-body position-relative"></div>
+                            <div class="draw-head position-absolute"></div>
+                            <div class="draw-body position-relative"></div>
                             <div class="hands position-absolute"></div>
                             <div class="legs position-absolute"></div>
                         </div>
@@ -47,5 +48,8 @@
         
     </div>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 </body>
 </html>
