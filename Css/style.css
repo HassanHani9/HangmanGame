@@ -5,22 +5,23 @@
 }
 
 .page-head .right .stand {
-  width: 200px;
-  height: 280px;
-  border-left: 4px solid black;
+    display: none;
+    width: 200px;
+    height: 280px;
+    border-left: 4px solid black;
 }
 .page-head .right .stand::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  transform: translate(-50%);
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  border-bottom: 4px solid black;
-  bottom: 0;
-  right: 50%;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    border-bottom: 4px solid black;
+    bottom: 0;
+    right: 50%;
 }
 .page-head .right .stand::after {
   content: "";
@@ -32,13 +33,15 @@
   background-color: black;
 }
 .page-head .right .the-hang{
+    display: none;
     height: 64px;
     background-color: black;
     top: 0;
     left: 120px;
     border: 3px solid black;
 }
-.page-head .right .drow-head {
+.page-head .right .draw-head {
+    display: none;
     width: 50px;
     height: 50px;
     border: 4px solid black;
@@ -51,7 +54,7 @@
     left: 98px;
 
 }
-.page-head .right .drow-head::before{
+.page-head .right .draw-head::before{
     content: '';
     position: absolute;
     left: 50%;
@@ -71,6 +74,7 @@
     -o-transform: translate(-50%, -50%);
 }
 .page-head .right .hands{
+    display: none;
     height: 70px;
     border-left: 4px solid black;
     top:120px;
@@ -104,6 +108,7 @@
     -o-transform: rotate(-30deg);
 }
 .page-head .right .legs{
+    display: none;
     height: 70px;
     border-left: 4px solid black;
     top:190px;
@@ -153,6 +158,9 @@
         background-color: #a5acb4c7;
         cursor: not-allowed;
     }
+    .left.finished{
+        cursor:not-allowed;
+    }
     
 .guess-letters{
     margin: 30px auto;
@@ -176,5 +184,22 @@
 .guess-letters span.space::after{
     content: "-";
     font-size: 30px;
-
+}
+.right .the-draw.wrong-1 .stand{
+    display: block;
+}
+.right .the-draw.wrong-2 .the-hang{
+    display: block;
+}
+.right .the-draw.wrong-3 .draw-head{
+    display: block;
+}
+.right .the-draw.wrong-4 .draw-body{
+    display: block;
+}
+.right .the-draw.wrong-5 .hands{
+    display: block;
+}
+.right .the-draw.wrong-6 .legs{
+    display: block;
 }
